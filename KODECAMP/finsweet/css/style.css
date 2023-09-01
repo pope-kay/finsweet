@@ -106,7 +106,7 @@ button{
     height: 70vh;
     margin: auto;
     /* background-color: brown; */
-    background-image: url(Image.png);
+    background-image: url(../images/Image.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -144,4 +144,8 @@ margin-bottom: 40px;
 
 .lowertexticon{
     display: flex;
+}
+
+.lowertext{
+    margin-left: 10px;
 }
