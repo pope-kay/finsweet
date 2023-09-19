@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
 }
 
 header{
@@ -9,9 +10,15 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /* background-color: burlywood; */
-    margin: auto;
-    padding: 10px 25px 10px 0px;
+    background-color:  whitesmoke;
+    /* margin: auto; */
+    /* padding: 10px 160px 10px 132px; */
+    /* position: relative; */
+    position: fixed;
+    z-index: 50;
+    /* right: 10%; */
+    left: 10%;
+    padding: 10px 15px;
 }
 #number{
     font-weight: bolder;
@@ -54,9 +61,9 @@ main{
  /* background-color: yellowgreen; */
  width: 80%; 
  margin: auto;
- height: 80vh;
+ height: 100vh;
  display: flex;
- flex-direction: column;
+ /* flex-direction: column; */
  justify-content: center;
  align-items: center;
  padding-right: 20px;
@@ -70,16 +77,32 @@ main{
     
 }
 
+/* Global Left */
 .left-form{
     /* background-color: salmon; */
     width: 50%;
-    height: 100%;
+    height: 70vh;
     margin: auto;
     row-gap: 50px;
     font-family: sans-serif;
+    /* justify-content: center;
+    flex-direction: column; */
 }
 
-button{
+/* global right */
+.right-gorm{
+    /* background-color: aqua; */
+    width: 50%;
+    height: 70vh;
+    margin: auto;
+    row-gap: 50px;
+    font-family: sans-serif;
+    /* justify-content: center;
+    flex-direction: column; */
+}
+
+/* global button */
+.globalbutton{
     background-color:  #FF6433;
     width: 160px;
     height: 55px;
@@ -88,6 +111,16 @@ button{
     border-radius: 7px;
     margin-bottom: 40px;
 }
+
+/* button{
+    background-color:  #FF6433;
+    width: 160px;
+    height: 55px;
+    justify-content: center;
+    border: none;
+    border-radius: 7px;
+    margin-bottom: 40px;
+} */
 
 #buttontext{
     color: white;
@@ -106,7 +139,7 @@ button{
     height: 70vh;
     margin: auto;
     /* background-color: brown; */
-    background-image: url(../images/Image.png);
+    background-image: url(Image.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -146,6 +179,347 @@ margin-bottom: 40px;
     display: flex;
 }
 
-.lowertext{
-    margin-left: 10px;
+#sect2, #sect3 {
+    /* background-color: blue; */
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+}
+
+/* .sect2form, .sect3form {
+    width: 80%;
+    height: 80%;
+    border: 10px solid gray;
+    display: flex; 
+    background-color: #FF6433;     
+} */
+
+/* global declaration */
+
+.sectmain {
+/* background-color: yellowgreen; */
+width: 80%; 
+margin: auto;
+height: 80vh;
+display: flex;
+/* flex-direction: column; */
+justify-content: center;
+align-items: center;
+padding-right: 20px;
+}
+
+/* Sector 2 specifics */
+#sect2 {
+    background-color:  #E2E6E9;
+    
+}
+.sect2form-left-form{
+/* background-color: salmon; */
+    width: 50%;
+    height: 70vh;
+    margin: auto;
+    /* row-gap: 50px; */
+    font-family: sans-serif;
+    padding-right: 40px;
+}
+
+/*h4 padding in left form div  */
+.heather h4{
+    margin-bottom: 8px;
+    margin-top: 8px;
+}
+
+.sect2form-left-form h1{
+    font-size: 40px;
+}
+
+/* global flex */
+.sect2left{
+    display: flex;
+    margin: 40px 0px 0px 0px;
+}
+
+/* icon space */
+.sect2lefticons{
+  margin-right: 20px;
+  background-color: white;
+  width: 50px;
+  height: 40px;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+  /* justify-items: center; */
+  display: flex;
+}
+
+.knowmore{
+   margin-left: 69px;
+   margin-top: 40px;
+}
+.sect2form-right-form{
+    /* background-color: aquamarine; */
+        width: 50%;
+        height: 70vh;
+        margin: auto;
+        /* row-gap: 50px; */
+        font-family: sans-serif;
+}
+
+.sect2form-right-form input{
+    height: 12%;
+    width: 100%;
+    margin-bottom: 2px;
+    border: none;
+}    
+
+#service-text {
+font-size: 40px;
+margin-bottom: 30px;
+}
+
+#buttontext{
+margin-top: 30px;
+}
+
+.sect2form {
+    background-color: salmon;
+    width: 50%;
+    /* height: 70vh; */
+    margin: auto;
+    row-gap: 50px;
+    font-family: sans-serif;
+    /* justify-content: center;
+    flex-direction: column; */
+}
+
+/* Sector 3 specifics */
+.sect3form-left-form{
+    /* background-color: salmon; */
+    width: 50%;
+    height: 70vh;
+    margin: auto;
+    row-gap: 30px;
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+    padding-right: 50px;   
+    justify-content: center; 
+}
+
+#process{
+    font-size: 45px;
+}
+
+.sect3form-right-form{
+      /* background-color: aquamarine; */
+      width: 50%;
+      height: 70vh;
+      margin: auto;
+      /* row-gap: 50px; */
+      font-family: sans-serif;
+      display: flex;
+}
+
+.numb{
+    display: block;
+    margin-right: 30px;
+}
+
+.numb .dots{
+    margin-left: 32px;
+}
+ 
+.quotetext h4{
+    margin: 25px 0px 40px 0px;   
+    
+}
+.textpush{
+    margin-bottom: 45px;
+}
+
+/* .textup{
+    margin-top: -80px;
+} */
+/* Sector 4 specifics */
+#sect4 {
+    background-color: lightgrey;
+    height: 100vh;
+    width: 100%;
+    /* display: flex; */
+}
+
+.sect4main{
+    /* background-color: yellowgreen; */
+width: 80%; 
+margin: auto;
+height: 100vh;
+/* display: flex; */
+/* flex-direction: column; */
+/* justify-content: center;
+align-items: center; */
+/* padding-right: 20px; */
+}
+
+#headertext{
+/* text-align: center; */
+font-size: 15px;
+padding-top: 40px;
+/* column-gap: 40px; */
+/* background-color: #FF6433; */
+}
+
+.sect4form-top-form{
+width: 80%;
+height: 30%;
+margin: auto;
+text-align: center;
+font-size: 30px;
+/* background-color: burlywood; */
+}
+
+.sect4form-bottom-form{
+    /* background-color: violet; */
+    height: 60%;
+    width: 78%;
+    margin: auto;
+    flex-wrap: wrap;
+    display: flex;
+    gap: 5px;
+    /* margin-right: ; */
+}
+
+.card{
+    height: 180px;
+    width: 200px;
+    /* background-color: blueviolet; */
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    /* row-gap: 5px; */
+    border: 1px black hidden;
+   background-color: #E2E6E9;
+
+}
+
+.wheelrepair, .repc{
+    color: white;
+    background-color: #FF6433;
+}
+
+
+.knowmor{
+    float: right;
+}
+/* Sector 5 specifics */
+
+#sect5 {
+    /* background-color: blue; */
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    /* justify-content: center; */
+    /* align-items: center;   */
+}
+
+.sect5main{
+/* background-color: yellowgreen; */
+width: 100%; 
+margin-top: auto;
+height: 90vh;
+/* display: flex; */
+/* flex-direction: column; */
+/* justify-content: center; */
+/* align-items: center; */
+
+}
+
+.sect5maintop{
+width: 100%; 
+margin-top: auto;
+height: 50vh;
+display: flex;
+/* flex-direction: column; */
+/* justify-content: center; */
+/* align-items: center; */
+}
+
+.sect5form-left-form{
+    width: 50%;
+    height: 61.8vh;
+    background-image: url(fins5left.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: #E2E6E9;    
+    /* padding-top: 13px; */
+    /* margin-top: 12px; */
+}
+.sect5form-right-form{
+    width: 50%;
+    height: 60vh;
+    /* margin: auto; */
+    /* background-color: brown; */
+    background-image: url(fins5right.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin-top: 12px;
+    
+}
+
+.sect5form-right-form img{
+    height: 62vh;
+    width: 98%;
+    /* margin-bottom: 40px; */
+    margin-top: -14px;
+}
+
+.query{
+    background-color: #FF6433;
+    height: 61.8vh;
+    width: 70%;
+    margin-left: auto;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;
+    padding-left: 50px;
+    padding-top: 100px;
+}
+
+#sect5butt{
+color: white;
+background-color: black;
+width: 160px;
+height: 55px;
+justify-content: center;
+border: none;
+border-radius: 7px;
+margin-top: 40px;
+
+}
+
+.sectfoot{
+    height: 30vh;
+    width: 100%;
+    margin: auto;
+    display: flex;
+    /* background-color: aqua; */
+    justify-items: center;
+    align-items: center;
+    justify-content: center;
+    gap: 10%;
+ padding-top: 50px;
+ color: blue;
+ font-size: 40px;
+ font-weight: bolder;
+
+}
+
+#sectfoottext{
+font-size: 16px;
+color: black;
+font-weight: lighter;
 }
